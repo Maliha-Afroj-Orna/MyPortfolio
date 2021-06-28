@@ -1,0 +1,323 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body h2{
+	font-size: 3rem;
+	font-weight: 900;
+	color: black;
+}
+/************* Navbar ****************/
+
+@media (min-width: 992px){
+ .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    margin-left: 600px;
+    margin-top: -38px;
+}}
+.navbar-toggler {
+	background-color: #303841;
+	padding: .10rem .60rem;
+}
+button, input, optgroup, select, textarea{
+	margin-left: 70%;
+}
+
+.navbar-expand-lg .container-fluid .navbar-brand img{
+	border-radius: 50%;
+}
+.nav-link{
+	color: #000000;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+}
+.nav-link:hover{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+
+/*********************** Main Section ***********************/
+
+.main{
+	background: url(background.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+.main img{
+	height: 100vh;
+	margin-top: -192px;
+}
+.small, small {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.main h3{
+	font-size: 4.4rem;
+	font-weight: 700;
+	color: white;
+}
+
+@media (max-width: 992px ){
+.main img {
+    height: 100vh;
+    margin-top: -192px;
+    visibility: hidden;
+}}
+.main h6{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	line-height: 1;
+	color: white;
+	border-bottom: 3px solid white;
+	width: 70%;
+	padding-bottom: 2px;
+
+}
+.main .bt1{
+	height: 55px;
+	width: 138px;
+	background-color: white;
+   color: black;
+   outline: none;
+   border: none;
+   font-weight: bold;
+   border-radius: 5px;
+   margin-left: -2px;
+}
+.main .bt1:hover{
+	background-color: #303841;
+	color: white;
+	transition: 0.5s;
+
+}
+.main .bt2{
+	height: 55px;
+	width: 138px;
+	background-color: transparent;
+   color: white;
+   outline: none;
+   border: 1px solid white;
+   font-weight: bold;
+   border-radius: 5px;
+   margin-left: 5px;
+}
+.main .bt2:hover{
+	background-color: white;
+	color: black;
+	transition: 0.5s;
+
+}
+
+/*********************** About Section ***********************/
+.aboutme img{
+	-webkit-box-shadow: 6px 4px 41px -24px rgba(0,0,0,.75); 
+	-moz-box-shadow: 6px 4px 41px -24px rgba(0,0,0,.75); 
+   box-shadow: 6px 4px 41px -24px rgba(0,0,0,.75); 
+}
+.aboutme h2{
+	font-size: 3rem;
+	font-weight: 900;
+}
+p.fw-bold {
+    border-bottom: 2px solid black;
+    width: 50%;
+}
+p.py-3{
+	color: #303841;
+}
+p.py-3 span{
+	color: #303841;
+}
+.fa{
+	font-size: 30px;
+	background-color: #303841;
+	color: white;
+	padding: 15px;
+	border-radius: 50%;
+	margin-top: 33px;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+#about .col-lg-4{
+	border-left: 2px solid #303841;
+
+}
+/************************* SKills Section *******************/
+
+.myskills{
+	background-color: #F8F9FA;
+}
+.myskills h2{
+	font-size: 3rem;
+	font-weight: 900;
+
+}
+p.fw-bold.text-center {
+    margin-left: 290px;
+}
+.progress-bar{
+	background-color: black;
+	font-size: 1rem;
+	text-align: left;
+	padding-left: 20px;
+}
+.progress{
+	background-color: white;
+	border: 1px solid black;
+	height: 23px;
+	margin: 30px 0 ;
+	margin-right: 70px;
+	cursor: pointer;
+}
+.col-lg-3 .fa{
+	border-left: none !important;
+	margin-left: -25px;
+	background-color:#F8F9FA ;
+	color: black;
+	font-size: 55px;
+	margin-bottom: 20px;
+}
+.col-lg-3 {
+    margin-top: -15px;
+}
+.col-lg-9 h3{
+	font-size: 1rem;
+	font-weight: 600;
+	float: left;
+}
+.col-lg-9 p{
+	color: #303841;
+	float: left;
+}
+.col-lg-9{
+	margin-left: -60px;
+}
+@media (max-width: 992px){
+	.myskills p.fw-bold.text-center {
+    margin-left: 183px;
+
+	}
+}
+
+
+/****************************** Projects Section ***********************/
+
+.py-5 h2{
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.my-project #carouselExampleIndicators p.fw-bold{
+	width: 100%;
+	border-bottom: none;
+}
+.carousel-indicators{
+	margin-bottom: -2rem;
+}
+.card{
+	cursor: pointer;
+	border: 1px solid #303841;
+}
+.card{
+	transition: .5s;
+}
+.card:hover{
+	
+	transform: translateY(-40px);
+
+
+}
+
+@media (max-width: 992px){
+	.my-project p.fw-bold.text-center {
+    margin-left: 174px;
+
+	}
+}
+
+
+/*************************** Contact Section *************************/
+.my-contact button, input, optgroup, select, textarea{
+	margin-left: 0px;
+	margin-bottom: 25px;
+}
+#contact {
+	background-color:#F8F9FA ;
+}
+#contact p{
+	color: #303841;
+}
+.form-control{
+	width: 95%;
+	padding:15px .75rem ;
+	border: 1.5px solid black;
+}
+
+.btn-dark{
+	font-size: 18px;
+	padding: 12px 30px;
+}
+
+#contact .fa{
+	font-size: 30px;
+	background-color: #303841;
+	color: white;
+	padding: 14px;
+	border-radius: 50%;
+	margin-top: 33px;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.col-md-3.col-lg-3.pt-2 {
+	margin-bottom: 15px;
+	margin-right: -28px;
+}
+.col-lg-9{
+	margin-left: 0;
+}
+
+@media (max-width: 992px){
+	.my-contact p.fw-bold.text-center {
+    margin-left: 174px;
+
+	}
+}
+@media (max-width: 992px){
+	.form-control ,.first{
+    width: 90% !important;
+
+	}
+}
+
+/************************* Footer Section ***************************/
+
+#footer{
+	background-color: #303841;
+}
+#footer h5{
+	color: white;
+}
+#footer h5{
+	font-size: 2rem;
+	margin-bottom: 43px;
+}
+#footer p{
+	color: #F8F9FA;
+	font-size: 20px;
+}
+button, input, optgroup, select, textarea {
+    margin-left: 0;
+}
+h5.fw-bold {
+    margin-left: 7px;
+}
+#footer .col-lg-9{
+	margin-left: -40px;
+}
