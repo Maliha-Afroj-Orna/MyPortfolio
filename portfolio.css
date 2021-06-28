@@ -3,11 +3,16 @@
 	padding: 0;
 	font-family: sans-serif;
 }
+html{
+	scroll-behavior: smooth;
+}
+
 body h2{
 	font-size: 3rem;
 	font-weight: 900;
 	color: black;
 }
+
 /************* Navbar ****************/
 
 @media (min-width: 992px){
@@ -67,6 +72,10 @@ button, input, optgroup, select, textarea{
     height: 100vh;
     margin-top: -192px;
     visibility: hidden;
+}}
+@media (max-width: 992px ){
+.navbar-toggler {
+    margin-left: 70%;
 }}
 .main h6{
 	font-size: 1.3rem;
@@ -320,4 +329,22 @@ h5.fw-bold {
 }
 #footer .col-lg-9{
 	margin-left: -40px;
+}
+.go-top-btn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	bottom: 40px;
+	right: 50px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 22px;
+	color: white;
+}
+@media(max-width: 992px){
+	#footer .col-lg-3{
+		margin-top: 30px;
+	}
 }
