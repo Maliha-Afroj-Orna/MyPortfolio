@@ -214,6 +214,11 @@ p.fw-bold.text-center {
 	}
 }
 
+/*************************** Banner Section ***************************/
+#banner button:hover {
+	background-color: #303841;
+	color: white;
+}
 
 /****************************** Projects Section ***********************/
 
