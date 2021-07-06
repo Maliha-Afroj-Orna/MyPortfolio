@@ -4,473 +4,1021 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <title>My Portfolio</title>
+    <!-- ********************** magnific popup css link *************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   </head>
   <body>
-<!-- ***************** Navbar *******************************-->
-
-    <nav class="navbar navbar-expand-lg fixed-top text-uppercase navbar-white bg-white">
+    <!-- ***************** Navbar *******************************-->
+    <nav class="navbar navbar-expand-lg fixed-top text-uppercase navbar-white bg-white" style="border-bottom: 1px solid black;">
       <div class="container">
-  <div class="container-fluid">
-    <a class="navbar-brand font-weight-bold" href="#"><img height="40px" width="50px" src="portfolio.png"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link active px-lg-3 rounded" href="#main">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-lg-3 rounded" href="#about">about</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-lg-3 rounded" href="#skills">skills</a>
-        </li>
-         <a class="nav-link px-lg-3 rounded" href="#projects">projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-lg-3 rounded" href="#contact">contact</a>
-      </ul>
-    </div>
-  </div>
-  </div>
-</nav>
-
-<!-- *********************** Main Section *********************** -->
-  <section id="main" class="main py-5">
-    <div class="container py-5">
-      <div class="row py-5">
-        <div class="col-lg-6 py-5 mr-auto" data-aos="fade-right" data-aos-duration="2000">
-          <h3><small class="hi">Hello, I'm</small><br>
+        <div class="container-fluid">
+          <a class="navbar-brand font-weight-bold" href="#"><img style="border:2px solid black;" height="40px" width="50px" src="portfolio.png" alt="Profile Image"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active px-lg-3 rounded" href="#main">Home</a>
+              </li>
+              <div class="dropdown nav-item">
+                <button class="btn dropdown-toggle nav text-success" style="padding-top:0px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a style="text-transform: uppercase;" class="nav-link active px-lg-3 rounded" href="#">About</a>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item fw-bold" href="#about">About Me</a></li>
+                  <li><a class="dropdown-item fw-bold" href="#course">Courses</a></li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link px-lg-3 rounded" href="#skills">skills</a>
+              </li>
+              <div class="dropdown nav-item">
+                <button class="btn dropdown-toggle nav text-success" style="padding-top:0px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a style="text-transform: uppercase;" class="nav-link active px-lg-3 rounded" href="#">Works</a>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item fw-bold" href="#projects">Projects</a></li>
+                  <li><a class="dropdown-item fw-bold" href="#gallery1">Certificates</a></li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link px-lg-3 rounded" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- *********************** Main Section *********************** -->
+    <section id="main" class="main py-5">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-6 py-5 mr-auto" data-aos="fade-right" data-aos-duration="2000">
+            <h3><small class="hi">Hello, I'm</small><br>
             Maliha Afroj Orna
-          </h3>
-          <h6 class="pt-1">Full Stack Web Developer</h6>
-          <a href="#projects"> <input type="button" value="My Work" name="" class="bt1 mt-3 mr-3"></a>
-          <a href="#contact"> <input type="button" value="Hire Me" name="" class="bt2 mt-3"></a>
-
-        </div>
-        <div class="col-lg-6 py-5" data-aos="fade-left" data-aos-duration="2000">
-          <img src="profile.png" class="rounded float-end" alt="...">
+            </h3>
+            <h6 class="pt-1">Full Stack Web Developer</h6>
+            <a href="#projects"> <input type="button" value="My Work" name="" class="bt1 mt-3 mr-3"></a>
+            <a href="#contact"> <input type="button" value="Hire Me" name="" class="bt2 mt-3"></a>
+          </div>
+          <div class="col-lg-6 py-5" data-aos="fade-left" data-aos-duration="2000">
+            <img src="profile.png" class="rounded float-end" alt="...">
+          </div>
         </div>
       </div>
-
+      
+    </section>
+    <!-- *********************** About Section *********************** -->
+    <section id="about" class="aboutme py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-12 col-lg-5">
+            <img src="profile.png" data-aos="fade-right" data-aos-duration="2000" class="img-fluid" alt="About Image">
+          </div>
+          <div class="col-md-12 col-lg-7" data-aos="fade-left" data-aos-duration="2000">
+            <div class="row" >
+              <h2 >About Me</h2>
+              <p class="fw-bold ">WEB DESIGNER AND DEVELOPER</p>
+              <p class="py-3">I am <span class="fw-bold"> Maliha Afroj Orna</span>,a professional web designer and developer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim nulla tincidunt, sagittis lorem tempus, aliquet magna. Ut ultricies lacus non justo ultrices, id dapibus orci sollicitudin.</p>
+            </div>
+            <div class="row">
+              <p class="pt-2"><span class="fw-bold">Name:</span> Maliha Afroj Orna</p><br>
+              <p><span class="fw-bold">Date of Birth: </span>20 September,2000</p><br>
+              <p><span class="fw-bold">Address:</span> Gazipur Sadar,Gazipur</p><br>
+              <p><span class="fw-bold">Zip Code:</span> 1703</p><br>
+              <p><span class="fw-bold">Email: </span>orna16@cse.pstu.ac.bd</p><br>
+              <p class="pb-4"><span class="fw-bold">Phone:</span> +88017******25</p><br>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-lg-4">
+                <i class="fa fa-car"></i> <span class="fw-bold"> Travel</span>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <i class="fa fa-headphones"></i><span class="fw-bold"> Music</span>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <i class="fa fa-film"></i> <span class="fw-bold"> Movie</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************************* Course Section ************************ -->
+    <section id="course" class="my-course">
+      <h2 style="background-color:#757857;color: white;margin-bottom: 50px;" data-aos="fade-up" data-aos-duration="2000" class="py-1 text-center">Courses</h2>
+      <div style="background-color:#757857;border-radius: 20px;padding: 14px;margin-bottom: 50px;" data-aos="fade-up" data-aos-duration="2000" class="container shadow p-3 mb-5">
+        <nav>
+          <h4 class="text-center text-white fw-bold pt-2">PATUAKHALI SCIENCE AND TECHNOLOGY UNIVERSITY</h4>
+          <p style="border-bottom: none;font-size: 20px;"class="text-center text-white pb-3">B.Sc. in Computer Science and Engineering (CSE)</p>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">LEVEL-I</button>
+            <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">LEVEL-II</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">LEVEL-III</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">LEVEL-IV</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <h6 class="fw-bold pt-3 pb-2 text-white text-center">SEMESTER-I</h6>
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">COURSE CODE</th>
+                      <th scope="col">COURSE TITLE</th>
+                      <th scope="col">LECTURES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">PHY 111 </th>
+                      <td>Physics-I </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">PHY 112 </th>
+                      <td>Physics-I Sessional </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CHE 111 </th>
+                      <td>Chemistry </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CHE 112 </th>
+                      <td>Chemistry Sessional </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">MAT 111 </th>
+                      <td>Mathematics-I </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">EEE 111 </th>
+                      <td>Basic Electrical Engineering  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">EEE 112 </th>
+                      <td>Basic Electrical Engineering Sessional  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 111 </th>
+                      <td>Programming Language  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 112 </th>
+                      <td>Programming Language Sessional  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 112  </th>
+                      <td>Engineering Drawing </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <h6 class="fw-bold pt-3 pb-2 text-white text-center">SEMESTER-II</h6>
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">COURSE CODE</th>
+                      <th scope="col">COURSE TITLE</th>
+                      <th scope="col">LECTURES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">PHY 121 </th>
+                      <td>Physics-II </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">PHY 122 </th>
+                      <td>Physics-II Sessional </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">MAT 121  </th>
+                      <td>Mathematics-II </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 121 </th>
+                      <td>Discrete Mathematics   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">LCM 121 </th>
+                      <td>Communicative English</td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">EEE 121 </th>
+                      <td>Electronic Device and Circuits</td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">EEE 122 </th>
+                      <td>Electronic Device and Circuits Sessional</td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 121  </th>
+                      <td>Object Oriented Programming   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 122 </th>
+                      <td>Object Oriented Programming Sessional</td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <h6 class="fw-bold pt-3 pb-2 text-white text-center">SEMESTER-I</h6>
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">COURSE CODE</th>
+                      <th scope="col">COURSE TITLE</th>
+                      <th scope="col">LECTURES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">CIT 211  </th>
+                      <td>Data Structure and Algorithms  </td>
+                      <td><a href="https://www.terabox.com/disk/home#/all?vmode=list&path=%2FVERSITY%20DOCUMENTS%2F3rd%20Semester%2FCIT-211"><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 212  </th>
+                      <td>Data Structure and Algorithms Sessional  </td>
+                      <td><a href="https://www.terabox.com/disk/home#/all?vmode=list&path=%2FVERSITY%20DOCUMENTS%2F3rd%20Semester%2FCIT-212"><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 213  </th>
+                      <td>Software Engineering   </td>
+                      <td><a href="https://www.terabox.com/disk/home#/all?vmode=list&path=%2FVERSITY%20DOCUMENTS%2F3rd%20Semester%2FCIT-213"><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 211  </th>
+                      <td>Data Communication and Engineering   </td>
+                      <td><a href="https://www.terabox.com/disk/home#/all?vmode=list&path=%2FVERSITY%20DOCUMENTS%2F3rd%20Semester%2FCCE-211"><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">MAT 211  </th>
+                      <td>Mathematics-III </td>
+                      <td><a href="https://www.terabox.com/disk/home#/all?vmode=list&path=%2FVERSITY%20DOCUMENTS%2F3rd%20Semester%2FMAT-211"><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">EEE 211  </th>
+                      <td>Electrical Technology   </td>
+                      <td><a href="https://www.terabox.com/disk/home#/all?vmode=list&path=%2FVERSITY%20DOCUMENTS%2F3rd%20Semester%2FEEE-211"><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">EEE 212  </th>
+                      <td>Electrical Technology Sessional   </td>
+                      <td><a href="https://www.terabox.com/disk/home#/all?vmode=list&path=%2FVERSITY%20DOCUMENTS%2F3rd%20Semester%2FEEE-212"><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">AIS 211  </th>
+                      <td>Accounting and Management  </td>
+                      <td><a href="https://www.terabox.com/disk/home#/all?vmode=list&path=%2FVERSITY%20DOCUMENTS%2F3rd%20Semester%2FAIS-211(---)"><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <h6 class="fw-bold pt-3 pb-2 text-white text-center">SEMESTER-II</h6>
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">COURSE CODE</th>
+                      <th scope="col">COURSE TITLE</th>
+                      <th scope="col">LECTURES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">CCE 221  </th>
+                      <td>Digital Logic Design   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 222  </th>
+                      <td>Digital Logic Design Sessional   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 223   </th>
+                      <td>Database System  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> CCE 224   </th>
+                      <td>Database System Sessional    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">AES 221  </th>
+                      <td>Government and Economics   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">MAT 221  </th>
+                      <td>Mathematics-IV  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 220 </th>
+                      <td>Web Programming Project </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 221   </th>
+                      <td>Information System Analysis and Design     </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 222  </th>
+                      <td>Info. System Analysis and Design S.</td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <h6 class="fw-bold pt-3 pb-2 text-white text-center">SEMESTER-I</h6>
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">COURSE CODE</th>
+                      <th scope="col">COURSE TITLE</th>
+                      <th scope="col">LECTURES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">CIT 311   </th>
+                      <td>Microprocessors and Assembly Language   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 312   </th>
+                      <td>Microprocessors and Assembly Language Sessional  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 313   </th>
+                      <td>Computer Organization and Architecture     </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 315   </th>
+                      <td>Artificial Intelligence    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 316   </th>
+                      <td>Artificial Intelligence Sessional  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 310   </th>
+                      <td>Software Development Project-I    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 311   </th>
+                      <td>Numerical Methods    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 312   </th>
+                      <td>Numerical Methods Sessional   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 313    </th>
+                      <td>Computer Networks    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 314    </th>
+                      <td>Computer Networks Sessional    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <h6 class="fw-bold pt-3 pb-2 text-white text-center">SEMESTER-II</h6>
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">COURSE CODE</th>
+                      <th scope="col">COURSE TITLE</th>
+                      <th scope="col">LECTURES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">CIT 320  </th>
+                      <td>Software Development Project-II   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 321  </th>
+                      <td>Operating System    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 322   </th>
+                      <td>Operating System Sessional    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> CIT 323   </th>
+                      <td>Simulation and Modeling    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 324   </th>
+                      <td>Simulation and Modeling Sessional    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">EEE 321   </th>
+                      <td>Digital Electronics and Pulse Techniques    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">EEE 322 </th>
+                      <td>Digital Electronics and Pulse Techniques Sessional   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 321   </th>
+                      <td>Computer Peripheral and Interfacing    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 322   </th>
+                      <td>Computer Peripheral and Interfacing S.</td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 323   </th>
+                      <td>Optical Fiber Communication   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <h6 class="fw-bold pt-3 pb-2 text-white text-center">SEMESTER-I</h6>
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">COURSE CODE</th>
+                      <th scope="col">COURSE TITLE</th>
+                      <th scope="col">LECTURES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">CSE 410    </th>
+                      <td>Project/Thesis    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CSE 412    </th>
+                      <td>Industrial Training   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 411   </th>
+                      <td>Algorithm Engineering    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 413   </th>
+                      <td>VLSI Design   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 415   </th>
+                      <td>Network Routing and Switching   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 416    </th>
+                      <td>Network Routing and Switching Sessional   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 417   </th>
+                      <td>Data Warehousing and Mining   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 411  </th>
+                      <td>Compiler Design and Autometa Theory    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 412    </th>
+                      <td>Compiler Design and Autometa Theory Sessional    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <h6 class="fw-bold pt-3 pb-2 text-white text-centers">SEMESTER-II</h6>
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">COURSE CODE</th>
+                      <th scope="col">COURSE TITLE</th>
+                      <th scope="col">LECTURES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">CSE 420   </th>
+                      <td>Project/Thesis    </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CSE 421   </th>
+                      <td>Seminar    </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CCE 421  </th>
+                      <td>Cryptography and Network Security  </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> CCE 422    </th>
+                      <td>Wireless and Cellular Communication   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 421    </th>
+                      <td>Computer Graphics and Image Processing     </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 422  </th>
+                      <td>Computer Graphics and Image Processing Sessional   </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">CIT 423  </th>
+                      <td>OPTIONAL     </td>
+                      <td><a href=""><button type="button" style="height:35px;width:62px" class="btn btn-outline-secondary"><i style="font-size:30px;margin-top: -20px;margin-left: -10px;background: transparent;" class="fa fa-download"></i></button></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- ************************* Skills Section ************************ -->
+    <section id="skills" class="myskills py-5">
+      <div class="container py-5">
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <h2 class="text-center pb-2">My Skills</h2>
+          <p class="fw-bold text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-6 pt-5" data-aos="fade-right" data-aos-duration="2000">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:98%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">HTML</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">CSS</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:85%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:92%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">BOOTSTRAP</div>
+            </div>
+            
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">jQUERY</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">WORDPRESS</div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
+            
+            <div class="row">
+              <div class="col-md-3 col-lg-3 pt-2">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <div class="col-md-9 col-lg-9 pt-3">
+                <div><h3>Web Design</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-lg-3 pt-2">
+                <i class="fa fa-code"></i>
+              </div>
+              <div class="col-md-9 col-lg-9 pt-3">
+                <div><h3>Web Development</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-lg-3 pt-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-9 col-lg-9 pt-3">
+                <div><h3>Support 24/7</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***************************** Banner Section ***************** -->
+    <section id="banner" class="my-banner pt-2" style="background-color: #757857;">
+      <div class="container pt-2">
+        <div class="row">
+          <div class="col-md-8 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
+            <h2 style="color:white;font-size: 30px;padding-bottom: 5px;">Have a project on your mind?</h2>
+            <p style="color:#F8F9FA;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.Ut ultricies lacus non justo ultrices, id dapibus orci sollicitudin.</p>
+            <a href="#contact"> <button style="height: 52px;width: 138px;outline: none;border: none;font-weight: bold;border-radius: 5px;"class="btn-secondary mt-2 mr-3">Contact Msse</button></a>
+          </div>
+          <div class="col-md-4 col-lg-4" data-aos="fade-left" data-aos-duration="2000">
+            <img style="height: 328px;background: transparent;margin-top: -125px;border-radius: 5px;" src="profile.png" alt="Banner Image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- **************************** Projects Section **************** -->
+    <section id="projects" class="my-project py-5">
+      <div class="container py-5">
+        <div class="project-top" data-aos="fade-up" data-aos-duration="2000">
+          <h2 class="text-center pb-2">My Projects</h2>
+          <p class="text-center fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide pt-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" class="bg-dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" class="bg-dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold"> Baby Trolley Walker Website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="2.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold">Business Website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold">Travel Website</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold">Restaurant Website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold"> Baby Trolley Walker Website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="2.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold">Business Website</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold">Travel Website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold">Restaurant Website</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body" style="border-top:2px solid #303841;">
+                      <p class="card-text fw-bold"> Baby Trolley Walker Website</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- **************************** Gallery Section *************************************** -->
+    <section id="gallery1" class="my-gallery py-5">
+      <h2 style="background-color:#757857;color: white;margin-bottom: 50px;text-transform:none;" data-aos="fade-up" data-aos-duration="2000" class="py-1 text-center">Certificates</h2>
+      <div class="container py-5">
+        <div class="gallery">
+          <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="web-development">Web</li>
+            <li class="buttons" data-filter="javascript">JS</li>
+            <li class="buttons" data-filter="js-es6">Js-ES6</li>
+            <li class="buttons" data-filter="c">C#</li>
+            <li class="buttons" data-filter="python">Python</li>
+            <li class="buttons" data-filter="english">English</li>
+          </ul>
+          <div class="image-container">
+            <a href="certificate/WebDevelopment-1(certificate)-1-min.jpg" class="image web-development">
+              <img height="429px" src="certificate/WebDevelopment-1(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/WebDevelopment-2(certificate)-1-min.jpg" class="image web-development">
+              <img height="429px" src="certificate/WebDevelopment-2(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/WebDevelopment-3(certificate)-1-min.jpg" class="image web-development">
+              <img height="429px" src="certificate/WebDevelopment-3(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/Javascript-1(certificate)-1-min.jpg" class="image javascript">
+              <img height="429px" src="certificate/Javascript-1(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/Javascript-2(certificate)-1-min.jpg" class="image javascript">
+              <img height="429px" src="certificate/Javascript-2(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/ES6(Javascript-3)(certificate)-1-min.jpg"  class="image js-es6">
+              <img height="429px" src="certificate/ES6(Javascript-3)(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/C-1(certificate)-1-min.jpg" class="image c">
+              <img height="429px" src="certificate/C-1(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/Python-1(certificate)-1-min.jpg" class="image python">
+              <img height="429px" src="certificate/Python-1(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/English-1(certificate)-1-min.jpg" class="image english">
+              <img height="429px" width="554px" src="certificate/English-1(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/English-2(certificate)-1-min.jpg" class="image english">
+              <img height="429px" width="554px" src="certificate/English-2(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/English-3(certificate)-1-min.jpg" class="image english">
+              <img height="429px" width="554px" src="certificate/English-3(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+            <a href="certificate/English-4(certificate)-1-min.jpg" class="image english">
+              <img height="429px" src="certificate/English-4(certificate)-1-min.jpg" alt="Certificate">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- *********************************** Contact Section ******************************** -->
+    <section id="contact" class="my-contact py-5">
+      <div class="container py-5">
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <h2 class="text-center pb-2">Contact</h2>
+          <p class="fw-bold text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="row pt-">
+          <div class="col-md-12 col-lg-7 pt-5" data-aos="fade-right" data-aos-duration="2000">
+            <form>
+              <div class="row">
+                <div class="col-md-12 col-lg-6">
+                  <input type="text" class="form-control first" style="width:95%" placeholder="Your Name">
+                </div>
+                <div class="col-md-12 col-lg-6">
+                  <input type="email" class="form-control" style="width:90%; float:left;" placeholder="Your Email">
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Subject">
+              <textarea cols="30" rows="7" class="form-control" placeholder="Message">
+              
+              </textarea>
+              <button type="submit" class="btn btn-dark fw-bold">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-12 col-lg-5 pt-5" data-aos="fade-left" data-aos-duration="2000">
+            <div class="row">
+              <div class="col-md-3 col-lg-3 pt-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-9 col-lg-9 pt-3">
+                <div><h3>Address:</h3><br>
+                  <p style="margin-left: -71px;">Gazipur Sadar,Gazipur</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-lg-3 pt-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-9 col-lg-9 pt-3">
+                <div><h3>Phone:</h3><br>
+                  <p style="margin-left: -58px;">+88017******25</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-lg-3 pt-2">
+                <i class="fa fa-paper-plane"></i>
+              </div>
+              <div class="col-md-9 col-lg-9 pt-3">
+                <div><h3>Email:</h3><br>
+                  <p style="margin-left: -49px;">orna16@cse.pstu.ac.bd</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-lg-3 pt-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-9 col-lg-9 pt-3">
+                <div><h3>Website:</h3><br>
+                  <p style="margin-left: -66px;">www.myportfolio.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
   </section>
-
-
-<!-- *********************** About Section *********************** -->
-
-  <section id="about" class="aboutme py-5">
+  <! **************************** Footer Section ************************** -->
+  <section id="footer" class="my-footer py-5">
     <div class="container py-5">
       <div class="row">
-        <div class="col-md-12 col-lg-5">
-          <img src="profile.png" data-aos="fade-right" data-aos-duration="2000" class="img-fluid">
+        <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
+          <h5 class="fw-bold">Lets Talk About</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.</p>
+          <button type="button" class="btn btn-secondary"><a style="text-decoration:none;color:#F8F9FA;" href="#contact">Learn More</a></button>
         </div>
-        <div class="col-md-12 col-lg-7" data-aos="fade-left" data-aos-duration="2000">
-          <div class="row" >
-          <h2 >About Me</h2>
-          <p class="fw-bold ">WEB DESIGNER AND DEVELOPER</p>
-          <p class="py-3">I am <span class="fw-bold"> Maliha Afroj Orna</span>,a professional web designer and developer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim nulla tincidunt, sagittis lorem tempus, aliquet magna. Ut ultricies lacus non justo ultrices, id dapibus orci sollicitudin.</p>
-     </div>
-      <div class="row">
-          <p class="pt-2"><span class="fw-bold">Name:</span> Maliha Afroj Orna</p><br>
-          <p><span class="fw-bold">Date of Birth: </span>20 September,2000</p><br>
-          <p><span class="fw-bold">Address:</span> Gazipur Sadar,Gazipur</p><br>
-          <p><span class="fw-bold">Zip Code:</span> 1703</p><br>
-          <p><span class="fw-bold">Email: </span>orna16@cse.pstu.ac.bd</p><br>
-          <p class="pb-4"><span class="fw-bold">Phone:</span> +88017******25</p><br>
-      </div>
-      <div class="row">
-          <div class="col-md-4 col-lg-4">
-            <i class="fa fa-car"></i> <span class="fw-bold"> Travel</span>
+        <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
+          <h5 style="padding-left: 60px;" class="fw-bold">Links</h5>
+          <div class="list" style="color:#F8F9FA; font-size: 20px;padding-left: 46px;cursor: pointer;">
+            <ul>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#main">Home</a></li>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#about">About</a></li>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#skills">Skills</a></li>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Projects</a></li>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#contact">Contact</a></li>
+            </ul>
           </div>
-          <div class="col-md-4 col-lg-4">
-            <i class="fa fa-headphones"></i><span class="fw-bold"> Music</span>
-          </div>
-          <div class="col-md-4 col-lg-4">
-            <i class="fa fa-film"></i> <span class="fw-bold"> Movie</span>
-          </div>
-
-     </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-
-<!-- ************************* Skills Section ************************ -->
-
-   <section id="skills" class="myskills py-5">
-     <div class="container py-5">
-      <div data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="text-center pb-2">My Skills</h2>
-        <p class="fw-bold text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      </div>
-      <div class="row">
-       <div class="col-md-12 col-lg-6 pt-5" data-aos="fade-right" data-aos-duration="2000">
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:98%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">HTML</div>
-             </div>
-             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">CSS</div>
-             </div>
-             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:85%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
-             </div>
-             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:92%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">BOOTSTRAP</div>
-             </div>
-             
-             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">jQuery</div>
-             </div>
-             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" role="progressbar" style="width:95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">WORDPRESS</div>
-             </div>
-
-       </div>
-       <div class="col-md-12 col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
-         
-         <div class="row">
-           <div class="col-md-3 col-lg-3 pt-2">
-             <i class="fa fa-laptop"></i>
-           </div>
-         <div class="col-md-9 col-lg-9 pt-3">
-           <div><h3>Web Design</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.</p>
-           </div>
-         </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-left" data-aos-duration="2000">
+          <h5 style="padding-right: 58px;" class="fw-bold">Projects</h5>
+          <div class="list" style="color:#F8F9FA; font-size: 20px;padding-right: 50px;cursor: pointer;">
+            <ul>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Baby Trolley Walker</a></li>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Business</a></li>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Travel</a></li>
+              <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Restaurant</a></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="row">
-           <div class="col-md-3 col-lg-3 pt-2">
-             <i class="fa fa-code"></i>
+        <div class="col-md-6 col-lg-3" data-aos="fade-left" data-aos-duration="2000">
+          <h5 class="fw-bold">Have a Question?</h5>
+          <div class="row">
+            <div class="col-md-3 col-lg-3">
+              <i style="font-size: 25px;background-color: #303841;color: #F8F9FA;" class="fa fa-paper-plane"></i>
             </div>
-         <div class="col-md-9 col-lg-9 pt-3">
-           <div><h3>Web Development</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.</p>
-           </div>
-         </div>
-        </div>
-
-        <div class="row">
-           <div class="col-md-3 col-lg-3 pt-2">
-             <i class="fa fa-phone"></i>
-           </div>
-         <div class="col-md-9 col-lg-9 pt-3">
-           <div><h3>Support 24/7</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.</p>
-           </div>
-         </div>
-        </div>
-
-
-       </div>
-       </div>
-     </div>
-   </section>
-
-<!-- ***************************** Banner Section ***************** -->
-  <section id="banner" class="my-banner pt-2" style="background-color: #B1B493;">
-    <div class="container pt-2">
-      <div class="row">
-        <div class="col-md-8 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
-          <h2 style="color:white;font-size: 30px;padding-bottom: 5px;">Have a project on your mind?</h2>
-          <p style="color:#F8F9FA;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.Ut ultricies lacus non justo ultrices, id dapibus orci sollicitudin.</p>
-            <a href="#contact"> <button style="height: 52px;width: 138px;outline: none;border: none;font-weight: bold;border-radius: 5px;"class="btn-secondary mt-2 mr-3">Contact me</button></a>    
-    </div>
-
-        <div class="col-md-4 col-lg-4" data-aos="fade-left" data-aos-duration="2000">
-          <img style="height: 328px;background: transparent;margin-top: -125px;border-radius: 5px;" src="profile.png">
-        </div>
-   </div>
-   </div> 
-  </section>
-
-
-<!-- **************************** Projects Section **************** -->
-
-<section id="projects" class="my-project py-5">
-   <div class="container py-5">
-    <div class="project-top" data-aos="fade-up" data-aos-duration="2000">
-     <h2 class="text-center pb-2">My Projects</h2>
-     <p class="text-center fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-
-    <div id="carouselExampleIndicators" class="carousel slide pt-5" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" class="bg-dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" class="bg-dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    
-
-
-    <div class="carousel-item active">
-      <div class="row">
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="1.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold"> Baby Trolley Walker Website</p>
-  </div>
-</div>
-</div>
-<div class="col-md-4 col-lg-4">
-<div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="2.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold">Business Website</p>
-  </div>
-</div>
-</div>
-<div class="col-md-4 col-lg-4">
-<div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="3.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold">Travel Website</p>
-  </div>
-</div>
-</div>
-    </div>
-    </div>
-
-
-
-    <div class="carousel-item">
-      <div class="row">
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="4.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold">Restaurant Website</p>
-  </div>
-</div>
-</div>
-<div class="col-md-4 col-lg-4">
-<div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="1.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold"> Baby Trolley Walker Website</p>
-  </div>
-</div>
-</div>
-<div class="col-md-4 col-lg-4">
-<div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="2.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold">Business Website</p>
-  </div>
-</div>
-</div>
-    </div>
-    </div>
-    <div class="carousel-item">
-      <div class="row">
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="3.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold">Travel Website</p>
-  </div>
-</div>
-</div>
-<div class="col-md-4 col-lg-4">
-<div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="4.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold">Restaurant Website</p>
-  </div>
-</div>
-</div>
-<div class="col-md-4 col-lg-4">
-<div class="card" style="width: 18rem;">
-  <a href="https://github.com/Maliha-Afroj-Orna?tab=repositories"><img src="1.png" class="card-img-top" alt="..."></a>
-  <div class="card-body" style="border-top:2px solid #303841;">
-    <p class="card-text fw-bold"> Baby Trolley Walker Website</p>
-  </div>
-</div>
-</div>
-    </div>
-    </div>
-  </div>
-  
-</div>
-   </div>
-</section>
-
-
-<!-- *********************************** Contact Section ******************************** -->
-
- <section id="contact" class="my-contact py-5">
-   <div class="container py-5">
-     <div data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="text-center pb-2">Contact</h2>
-        <p class="fw-bold text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      </div>
-
-  <div class="row pt-">
-
-
-   <div class="col-md-12 col-lg-7 pt-5" data-aos="fade-right" data-aos-duration="2000">
-      <form>
-        <div class="row">
-          <div class="col-md-12 col-lg-6">
-            <input type="text" class="form-control first" style="width:95%" placeholder="Your Name">
-          </div>
-          <div class="col-md-12 col-lg-6">
-            <input type="email" class="form-control" style="width:90%; float:left;" placeholder="Your Email">
-          </div>
-        </div>
-         <input type="text" class="form-control" placeholder="Subject">
-         <textarea cols="30" rows="7" class="form-control" placeholder="Message">
-          
-         </textarea> 
-         <button type="submit" class="btn btn-dark fw-bold">Submit</button>
-      </form>
-    </div>
-
-<div class="col-md-12 col-lg-5 pt-5" data-aos="fade-left" data-aos-duration="2000">
-    <div class="row">
-           <div class="col-md-3 col-lg-3 pt-2">
-             <i class="fa fa-map-marker"></i>
-           </div>
-         <div class="col-md-9 col-lg-9 pt-3">
-           <div><h3>Address:</h3><br>
-           <p style="margin-left: -71px;">Gazipur Sadar,Gazipur</p>
-           </div>
-         </div>
-        </div>
-
-        <div class="row">
-           <div class="col-md-3 col-lg-3 pt-2">
-             <i class="fa fa-phone"></i>
+            <div class="col-md-9 col-lg-9">
+              <h3 class="fw-bold"style="font-size: 20px;color:#F8F9FA;">Email:</h3>
+              <p>orna16@cse.pstu.ac.bd</p>
             </div>
-         <div class="col-md-9 col-lg-9 pt-3">
-           <div><h3>Phone:</h3><br>
-           <p style="margin-left: -58px;">+88017******25</p>
-           </div>
-         </div>
-        </div>
-
-        <div class="row">
-           <div class="col-md-3 col-lg-3 pt-2">
-             <i class="fa fa-paper-plane"></i>
-           </div>
-         <div class="col-md-9 col-lg-9 pt-3">
-           <div><h3>Email:</h3><br>
-           <p style="margin-left: -49px;">orna16@cse.pstu.ac.bd</p>
-           </div>
-         </div>
-        </div>
-        <div class="row">
-           <div class="col-md-3 col-lg-3 pt-2">
-             <i class="fa fa-globe"></i>
-           </div>
-         <div class="col-md-9 col-lg-9 pt-3">
-           <div><h3>Website:</h3><br>
-           <p style="margin-left: -66px;">www.myportfolio.com</p>
-           </div>
-         </div>
-        </div>
-
-
-       </div>
-  </div>
-
-</div>
-
-
-      </div>
- </section>
-
-<! **************************** Footer Section ************************** -->
-   <section id="footer" class="my-footer py-5">
-     <div class="container py-5">
-       <div class="row">  
-          <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
-            <h5 class="fw-bold">Lets Talk About</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis turpis tortor, et semper nisi scelerisque sed.</p>
-
-              <button type="button" class="btn btn-secondary"><a style="text-decoration:none;color:#F8F9FA;" href="#contact">Learn More</a></button>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
-            <h5 style="padding-left: 60px;" class="fw-bold">Links</h5>
-              <div class="list" style="color:#F8F9FA; font-size: 20px;padding-left: 46px;cursor: pointer;">
-                <ul>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#main">Home</a></li>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#about">About</a></li>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#skills">Skills</a></li>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Projects</a></li>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#contact">Contact</a></li>
-                </ul>
-              </div>  
-
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-left" data-aos-duration="2000">
-            <h5 style="padding-right: 58px;" class="fw-bold">Projects</h5>
-              <div class="list" style="color:#F8F9FA; font-size: 20px;padding-right: 50px;cursor: pointer;">
-                <ul>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Baby Trolley Walker</a></li>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Business</a></li>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Travel</a></li>
-                  <li><a style="text-decoration: none;color: #F8F9FA;" href="#projects">Restaurant</a></li>
-                </ul>
-              </div>  
-
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-left" data-aos-duration="2000">
-            <h5 class="fw-bold">Have a Question?</h5>
             <div class="row">
-              <div class="col-md-3 col-lg-3">
-                <i style="font-size: 25px;background-color: #303841;color: #F8F9FA;" class="fa fa-paper-plane"></i>
-              </div>
-              <div class="col-md-9 col-lg-9">
-                <h3 class="fw-bold"style="font-size: 20px;color:#F8F9FA;">Email:</h3>
-                <p>orna16@cse.pstu.ac.bd</p>
-              </div>
-              <div class="row">
-                  <div class="col-md-4 col-lg-4"><a href="https://www.facebook.com/maliha.orna.16/"><i style="font-size:25px;background-color:#303841;color:#F8F9FA;margin-left: 25px;margin-top: -15px;" class="fa fa-facebook"></i></a></div>
-                <div class="col-md-4 col-lg-4"><a href="https://www.instagram.com/malihaafrojorna/"><i style="font-size:25px;background-color:#303841;color:#F8F9FA;margin-left: 25px;margin-top: -15px;" class="fa fa-instagram"></i></a></div>
-                <div class="col-md-4 col-lg-4"><a href="https://www.linkedin.com/in/maliha-afroj-orna-46b1471b1/"><i style="font-size:25px;background-color:#303841;color:#F8F9FA;margin-left: 25px;margin-top: -15px;" class="fa fa-linkedin"></i></a></div>
-              </div>
+              <div class="col-md-4 col-lg-4"><a href="https://www.facebook.com/maliha.orna.16/"><i style="font-size:25px;background-color:#303841;color:#F8F9FA;margin-left: 25px;margin-top: -15px;" class="fa fa-facebook"></i></a></div>
+              <div class="col-md-4 col-lg-4"><a href="https://www.instagram.com/malihaafrojorna/"><i style="font-size:25px;background-color:#303841;color:#F8F9FA;margin-left: 25px;margin-top: -15px;" class="fa fa-instagram"></i></a></div>
+              <div class="col-md-4 col-lg-4"><a href="https://www.linkedin.com/in/maliha-afroj-orna-46b1471b1/"><i style="font-size:25px;background-color:#303841;color:#F8F9FA;margin-left: 25px;margin-top: -15px;" class="fa fa-linkedin"></i></a></div>
             </div>
           </div>
-       </div>
-       <div class="row pt-5">
-         <div class="col-md-10 col-lg-10 offset-lg-2" data-aos="fade-up" data-aos-duration="2000">
-           <p style="margin-top:50px;">Copyright ©2021 All rights reserved | MALIHA AFROJ ORNA</p>
-         </div>
-         <a class="go-top-btn" href="#main"><i class="fa fa-arrow-circle-up"></i></a>
-       </div>
-     </div>
-   </section>
-
-
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-md-10 col-lg-10 offset-lg-2" data-aos="fade-up" data-aos-duration="2000">
+          <p style="margin-top:50px;">Copyright ©2021 All rights reserved | MALIHA AFROJ ORNA</p>
+        </div>
+        <a class="go-top-btn" href="#main"><i class="fa fa-arrow-circle-up"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- ******************** jQuery CDN link ******************************* -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- ******************** Magnific popup CDN link ********************** -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script>
-    AOS.init();
+  $(document).ready(function(){
+  $(".buttons").click(function(){
+  $(this).addClass("active").siblings().removeClass("active");
+  var filter= $(this).attr("data-filter")
+  if(filter == "all"){
+  $(".image").show(400);
+  }
+  else{
+  $(".image").not("."+filter).hide(200);
+  $(".image").filter("."+filter).show(400);
+  }
+  });
+  $(".gallery").magnificPopup({
+  delegate: "a",
+  type:"image",
+  gallery:{
+  enabled:true
+  }
+  });
+  });
   </script>
-  </body>
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+</body>
 </html>

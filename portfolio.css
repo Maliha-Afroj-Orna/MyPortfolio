@@ -43,6 +43,10 @@ button, input, optgroup, select, textarea{
 	background-color: #000000;
 	color: #ffffff;
 }
+.dropdown-toggle::after{
+	margin-left: 78px;
+	margin-top: -25px;
+}
 
 
 /*********************** Main Section ***********************/
@@ -157,6 +161,19 @@ p.py-3 span{
 	border-left: 2px solid #303841;
 
 }
+/************************* Course Section *******************/
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	color: #212529;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+	color: white;
+	background-color: #212529;
+}
+.nav-tabs .nav-link{
+	margin-right: 2px;
+}
+
 /************************* SKills Section *******************/
 
 .myskills{
@@ -255,7 +272,62 @@ p.fw-bold.text-center {
 	}
 }
 
-
+/**************************** Gallery Section *******************/
+#gallery1{
+	text-transform: uppercase;
+	transition: all .2s cubic-bezier(.34,1.12,.68,1.31);
+}
+.gallery{
+	min-height: 100vh;
+	background: #eee;
+	padding-bottom: 100px;
+}
+.gallery .controls{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+	list-style: none;
+}
+.gallery .controls .buttons{
+	height: 40px;
+	width: 140px;
+	background: #fff;
+	color: #666;
+	font-size: 20px;
+	line-height: 40px;
+	cursor: pointer;
+	margin: 20px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+.gallery .controls .buttons.active{
+	background-color:#757857;
+	color: #fff;
+}
+.gallery .image-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.gallery .image-container .image{
+	height: 250px;
+	width: 345px;
+	overflow: hidden;
+	border: 7px solid #757857;
+	box-shadow: 0, 3px 5px rgba(0, 0, 0, .3);
+	margin: 10px;
+}
+.gallery .image-container .image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.gallery .image-container .image:hover img{
+	transform: scale(1.4);
+}
 /*************************** Contact Section *************************/
 .my-contact button, input, optgroup, select, textarea{
 	margin-left: 0px;
@@ -347,6 +419,18 @@ h5.fw-bold {
 	line-height: 50px;
 	font-size: 22px;
 	color: white;
+}
+.fa-facebook:hover{
+	background-color: #757857 !important;
+}
+.fa-instagram:hover{
+	background-color: #757857 !important;
+}
+.fa-linkedin:hover{
+	background-color: #757857 !important;
+}
+.fa-arrow-circle-up:hover{
+	background-color: #757857 !important;
 }
 @media(max-width: 992px){
 	#footer .col-lg-3{
